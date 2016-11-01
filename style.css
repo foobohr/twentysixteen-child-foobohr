@@ -1,0 +1,256 @@
+/*
+ Theme Name:   Twenty Sixteern Child foobohr
+ Description:  Twenty Sixteern Child Theme
+ Author:       foobohr
+ Author URI:   http://foobohr.com
+ Template:     twentysixteen
+ Version:      1.0.0
+ Text Domain:  twentysixteen
+*/
+/* 元テーマで Genericons, Inconsolata 以外を指定しているセレクタすべて */
+html,
+body,
+button,
+input,
+select,
+textarea,
+button,
+button[disabled]:hover,
+button[disabled]:focus,
+input[type="button"],
+input[type="button"][disabled]:hover,
+input[type="button"][disabled]:focus,
+input[type="reset"],
+input[type="reset"][disabled]:hover,
+input[type="reset"][disabled]:focus,
+input[type="submit"],
+input[type="submit"][disabled]:hover,
+input[type="submit"][disabled]:focus,
+.post-password-form label,
+.main-navigation,
+.post-navigation,
+.post-navigation .post-title,
+.pagination,
+.image-navigation,
+.comment-navigation,
+.site .skip-link,
+.logged-in .site .skip-link,
+.widget .widget-title,
+.widget_recent_entries .post-date,
+.widget_rss .rss-date,
+.widget_rss cite,
+.tagcloud a,
+.site-title,
+.entry-title,
+.entry-footer,
+.sticky-post,
+.page-title,
+.page-links,
+.comments-title,
+.comment-reply-title,
+.comment-metadata,
+.pingback .edit-link,
+.comment-reply-link,
+.comment-form label,
+.no-comments,
+.required,
+.site-footer .site-title, /*font-family: inherit;*/
+.site-footer .site-title:after,
+.widecolumn label,
+.widecolumn .mu_register label {
+  font-family: "Noto Sans Japanese", sans-serif;
+}
+/** font weight 900 -> 700 **/
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6,
+.entry-summary h1,
+.entry-summary h2,
+.entry-summary h3,
+.entry-summary h4,
+.entry-summary h5,
+.entry-summary h6,
+.comment-content h1,
+.comment-content h2,
+.comment-content h3,
+.comment-content h4,
+.comment-content h5,
+.comment-content h6,
+.textwidget h1,
+.textwidget h2,
+.textwidget h3,
+.textwidget h4,
+.textwidget h5,
+.textwidget h6 {
+	font-weight: 700;
+}
+.widget_calendar caption {
+  font-weight: 700;
+}
+.entry-content .author-title {
+  font-weight: 700;
+}
+.widecolumn h2 {
+  font-weight: 700;
+}
+
+.page-header {
+	border-top: solid thin #1a1a1a;
+}
+
+
+/* メディアタイプ指定、printを除き５種類
+@media screen and (min-width: 44.375em) {
+@media screen and (min-width: 48.9375em) {
+@media screen and (min-width: 56.875em) {
+@media screen and (min-width: 61.5625em) {
+@media screen and (min-width: 75em) {
+*/
+
+.site-inner {
+  max-width: 1600px;
+}
+.site-title {
+  font-size: 1.875rem;
+}
+.entry-header,
+.entry-summary {
+  margin-bottom: 2rem;
+}
+.post-navigation .post-title {
+  font-size: 1.25rem;
+}
+body:not(.custom-background-image):before, body:not(.custom-background-image):after {
+  height: 0px;
+}
+
+@media screen and (min-width: 44.375em) {
+  .site-main > article {
+    margin-bottom: 3.5em;
+  }
+  .site-title {
+    font-size: 2.0rem;
+  }
+  .entry-title {
+    font-size: 1.5rem;
+  }
+  .comment-list + .comment-respond,
+  .comment-navigation + .comment-respond {
+    padding-top: 1em;
+  }
+}
+@media screen and (min-width: 48.9375em) {
+}
+@media screen and (min-width: 56.875em) {
+  .site-footer {
+    padding-bottom: 1.75em;
+  }
+}
+@media screen and (min-width: 61.5625em) {
+  .site-title {
+    font-size: 3.0rem;
+  }
+  .entry-title {
+    font-size: 2.0rem;
+    margin-bottom: 0.5rem;
+  }
+  body:not(.search-results) article:not(.sticky) .updated-on
+  {
+    display: block;
+    margin-bottom: 0.5384615385em;
+  }
+  body:not(.search-results) article:not(.sticky) .posted-on,
+  body:not(.search-results) article:not(.sticky) .updated-on,
+  body:not(.search-results) .cat-links,
+  body:not(.search-results) .tags-links,
+  body:not(.search-results) article:not(.type-page) .comments-link {
+    display: inline;
+  }
+  .site-main > article {
+    margin-bottom: 3.5em;
+  }
+  body:not(.search-results) article:not(.type-page) .entry-content {
+    width: 90%;
+  }
+  .comment-list + .comment-respond,
+  .comment-navigation + .comment-respond {
+    padding-top: 1em;
+  }
+}
+/* Typography */
+.site-description {
+  font-size: 1rem;
+}
+/* header margin */
+.site-header {
+  padding-top: 0rem;
+  padding-bottom: 1rem;
+}
+/* widget margin/padding */
+.widget {
+  border-style: none;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.widget .widget-title {
+  border-bottom: solid thin;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+/* comment */
+.comments-title {
+  border-top: solid thin;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+}
+.comment-list article {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.comment-metadata {
+  margin-bottom: 0.5rem;
+}
+.comment-reply-title {
+  border-top: solid thin;
+  padding-top: 1rem;
+}
+/* post navigation */
+.post-navigation {
+  border-top: thin solid #1a1a1a;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: rgb(26, 26, 26);
+  border-bottom: thin solid #1a1a1a;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(26, 26, 26);
+}
+.post-navigation div + div {
+  border-top: thin solid #1a1a1a;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: rgb(26, 26, 26);
+}
+
+.updated:not(.published) {
+  display: inline;
+}
+/*
+.posted-on {
+  margin-right: 1em;
+}*/
+.entry-header .posted-on,
+.entry-header .updated-on,
+.entry-header .cat-links,
+.entry-header .tags-links,
+.entry-header .comments-link {
+  margin-right: 0.5em;
+}
+.entry-header .fa {
+  margin-right: 0.5em;
+}
